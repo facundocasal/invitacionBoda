@@ -1,0 +1,455 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* font */
+
+@font-face {
+  font-family: "Ecuyer";
+  src: url("../font/EcuyerR0902.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+p {
+  margin-bottom: 0;
+}
+body {
+  background-color: #e9e9df;
+  
+}
+.flecha {
+  font-size: 5rem;
+  color: #ccc;
+  top: 75%;
+  left: 48%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+.titulos__principal{
+  margin-top: 3rem;
+  font-size: 5.5rem;
+  font-family: "Ms Madi", cursive;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #c4a246;
+}
+.titulos {
+  font-size: 5.5rem;
+  font-family: "Ms Madi", cursive;
+  font-family: 'DM Serif Display', serif;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #c4a246;
+}
+.titulos__cuando {
+  color: #fff;
+}
+.fondoTitulos {
+  background-color: #f0f0f0;
+}
+/* Cuando */
+.cuando {
+  height: 100vh;
+  text-align: center;
+  background-position: center center;
+  background-image: url("../CaroyFacu/portada.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  padding-bottom: 20%;
+}
+
+.cuando__fecha{
+  position: absolute;
+  font-size: 3.5rem;
+  font-weight: 100;
+  font-family: 'DM Serif Display', serif;
+  /* font-family: "Ms Madi", cursive; */
+  color: #fff;
+  margin: auto;
+  top: 65%;
+  left: 43%;
+  /* transform: translate(-50%, -50%); */
+}
+
+
+.cuando::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.cuando__contenido {
+  padding: 1rem;
+  position: relative;
+  color: #f0f0f0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
+/*temporizador */
+
+.contenedorTemporizador{
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  width: 100%;
+  position: relative;
+  margin-top: -7rem;
+  background-image: url(fixdate.io/modelo-invitacion/24/img/img_ondas01.svg);
+  background-size: contain;
+}
+.temporizador-box{
+  background: url(https://www.fixdate.io/modelo-invitacion/24/img/img_circuloContador01.svg) center center no-repeat; 
+  width: 600px;
+  height: 600px;
+}
+.divisor{
+  width: 40%;
+  margin: auto;
+}
+.temporizador-box-item{
+  text-align: center;
+  width: 80%;
+  height: 80%; 
+  background-color: #fff; 
+  box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.40);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.temporizadorDatos{
+  display: flex;
+  width: 25%;
+  flex-direction: column;
+  border-right: 1px solid #ccc;
+  padding: 0 8px;
+  font-family: 'DM Serif Display', serif;
+  float: left;
+}
+.temporizadorDatosSeg{
+  display: flex;
+  width: 25%;
+  flex-direction: column;
+  font-family: 'DM Serif Display', serif;
+  padding: 0 8px;
+}
+.corazon{
+  --fa-animation-duration: 2s;
+   font-size: xx-large;
+   color: #c4a246;
+}
+.cuando__contenido__texto {
+  margin-top: 1rem;
+  font-size: 4rem;
+  font-weight: 100;
+  font-family: 'DM Serif Display', serif;
+}
+
+#temporizador {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2rem;
+  display: flex;
+  width: 100%;
+  height: 200px;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+}
+
+/* Donde */
+.donde {
+  display: flex;
+  height: auto;
+  padding: 2rem;
+  padding-bottom: 9rem;
+  justify-content: space-around;
+}
+.donde__card {
+  justify-content: space-between;
+  display: flex;
+  width: 45%;
+  flex-direction: column;
+  align-items: center;
+}
+.donde__card__imagen {
+  width: 200px;
+  height: 150px;
+  border-radius: 5%;
+  box-shadow: 2px 6px 20px 0px;
+}
+.donde__card__titulo {
+  width: 100%;
+  text-align: center;
+  font-size: 4.5rem;
+  font-family: 'DM Serif Display', serif;
+}
+
+.donde__card__texto {
+  margin: auto;
+  text-align: center;
+  font-size: 1.2rem;
+  width: 90%;
+}
+
+.card__button {
+  background-color: #c4a246;
+  color: #333;
+  border-radius: 100px 15px 100px 15px;
+  padding: 8px 20px;
+}
+
+.card__img {
+  width: 75px;
+  margin: 1rem auto;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+  margin: 0.5rem;
+}
+.textoModal {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.dressCode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dressCode__imgen img {
+  width: 100px;
+}
+.dressCode__texto {
+  font-size: 2rem;
+  color: #333;
+}
+.carousel {
+  width: 70%;
+  margin: auto;
+}
+.imagenCarrusel {
+  height: 600px;
+  border-radius: 5px;
+  /* width: 80%; */
+}
+.mesaRegalos {
+  padding: 1rem;
+}
+.confirmacion {
+  width: 100%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin: auto;
+  height: 300px;
+  justify-content: space-evenly;
+}
+input,
+select {
+  background-color: #e9e9df;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #333;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: 600;
+}
+.buttonsWhatsap {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  width: 35%;
+}
+.buttonsWhatsap__contenido {
+  padding: 10px;
+  width: 35%;
+  color: #f0f0f0;
+  background-color: #c4a246;
+  border-radius: 100px 15px 100px 15px;
+}
+.buttonsWhatsap__contenido:hover {
+  color: #59705a;
+  background-color: wheat;
+}
+
+.insta {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.insta__icon {
+  color: #c4a246;
+  font-size: 5rem;
+}
+.tag {
+  color: #333;
+  text-decoration: none;
+  font-size: 2.5rem;
+}
+.tag:hover {
+  color: #c4a246;
+}
+/* baner final  */
+
+.banner__final {
+  height: 200px;
+  overflow: hidden;
+  width: 100%;
+  z-index: 1;
+  color: wheat;
+}
+/* footer  */
+
+footer {
+  height: 50px;
+  background-color: #ffefd5;
+}
+@media screen and (max-width: 800px) {
+  form {
+    width: 60%;
+  }
+  .buttonsWhatsap {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .titulos {
+    font-size: 3rem;
+    letter-spacing: 1px;
+  }
+  .titulos__principal{
+    margin-top: 0;
+    font-size: 3rem;
+    letter-spacing: 1px;
+  }
+  .cuando__contenido {
+    padding: 2.2rem;
+    justify-content: space-around;
+  }
+  .cuando__fecha{
+    left: 31%;
+    font-size: 2rem;
+    color: #fff;
+    transform: translate(-50%, -50%);
+  }
+  .flecha{
+    font-size: 3rem;
+    left: 44%;
+    transform: translate(-50%, -50%);
+  }
+  .contenedorTemporizador{
+    margin-top: -4rem;
+  }
+
+  .cuando__contenido__texto {
+    font-size: 3.5rem;
+  }
+  #temporizador {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  .temporizador-box{
+    width: 400px;
+    height: 400px;
+  }
+  .faltan {
+    width: 100%;
+  }
+  .donde {
+    flex-direction: column;
+  }
+  .donde__card {
+    width: 100%;
+  }
+  .fiesta {
+    margin-top: 1rem;
+  }
+  .donde__card__texto {
+    font-size: 1rem;
+    width: 100%;
+  }
+  .addeventatc {
+    width: 50%;
+  }
+  .dressCode__imgen img {
+    width: 80px;
+  }
+  .dressCode__texto {
+    font-size: 1.5rem;
+  }
+  .carousel {
+    width: 95%;
+  }
+  .imagenCarrusel {
+    height: 500px;
+    width: 100%;
+  }
+  .confirmacion {
+    overflow: hidden;
+  }
+  form {
+    width: 80%;
+  }
+
+  form > input,
+  select,
+  #whatsap1,
+  #whatsap2 {
+    margin: 5px 0;
+  }
+  .buttonsWhatsap {
+    width: 90%;
+  }
+  .buttonsWhatsap__contenido {
+    padding: 5px;
+  }
+
+  .insta {
+    height: 380px;
+  }
+
+  .banner__final__titulo {
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .titulos {
+    font-size: 2.5rem;
+  }
+  .cuando__fecha{
+    left: 25%;
+    color: #fff;
+  }
+  #temporizador {
+    font-size: 0.95rem;
+  }
+  .mesaRegalos {
+    font-size: 0.8rem;
+  }
+  .buttonsWhatsap {
+    width: 100%;
+  }
+}
+
