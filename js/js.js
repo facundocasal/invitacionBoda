@@ -37,7 +37,6 @@ const countdown = (deadline, elem, finalMessage) => {
   const timeUpdate = setInterval(() => {
     let t = getRemainTime(deadline);
 
-    // el.innerHTML = `<p class="cuando__contenido__texto" id="temporizador">${t.remainDays}</p>`
     el.innerHTML = `
         <div class="temporizadorDatos">
         <p>${t.remainDays}</p>
@@ -69,42 +68,6 @@ const countdown = (deadline, elem, finalMessage) => {
 };
 countdown(`May 19 2023 00:00:00 GMT-0300`, `temporizador`, `Es Hoy`);
 
-// // Set the date we're counting down to
-// let countDownDate = new Date("May 19, 2023 00:00:00").getTime();
-
-// // Update the count down every 1 second
-// let x = setInterval(function() {
-
-//   // Get today's date and time
-//   let now = new Date().getTime();
-
-//   // Find the distance between now and the count down date
-//   let distance = countDownDate - now;
-
-//   // Time calculations for days, hours, minutes and seconds
-//   let days = Math.floor(distance / (1000 * 60 * 60 * 24));
-//   let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-//   let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-//   let seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-//   // Display the result in the element with id="temporizador"
-//   document.getElementById("temporizador").innerHTML = `
-//   <p class="cuenta-regresiva__temporizador__dias" id="dias">${days}</p>
-//   <p class="cuenta-regresiva__temporizador__separador">:</p>
-//   <p class="cuenta-regresiva__temporizador__horas" id="horas">${hours}</p>
-//   <p class="cuenta-regresiva__temporizador__separador">:</p>
-//   <p class="cuenta-regresiva__temporizador__minutos" id="minutos">${minutes}</p>
-//   <p class="cuenta-regresiva__temporizador__separador">:</p>
-//   <p class="cuenta-regresiva__temporizador__segundos" id="segundos">${seconds}</p>`
-// //   days + "d " + hours + "h "
-// //   + minutes + "m " + seconds + "s "
-
-//   // If the count down is finished, write some text
-//   if (distance < 0) {
-//     clearInterval(x);
-//     document.getElementById("temporizador").innerHTML = "Es Hoy";
-//   }
-// }, 1000);
 
 // maquina de escibir
 
