@@ -62,7 +62,7 @@ const countdown = (deadline, elem, finalMessage) => {
     }
     if (t.remainDays <= -2) {
       el.innerHTML = `<a data-aos="flip-left" style="color:wheat;" class="tag fw-bold" href="https://www.instagram.com/explore/tags/boda/bodaCaroyFacu"><i
-            class="fa-solid fa-hashtag"></i>bodaluylucho</a>`;
+            class="fa-solid fa-hashtag"></i>bodaCaro&Facu</a>`;
     }
   }, 1000);
 };
