@@ -57,3 +57,7 @@ El cliente puede ofrecer este servicio para crear y compartir invitaciones web c
 - **Reuniones corporativas**
 - **Aniversarios**
 - **Fiestas temáticas**
+
+### Autor
+
+[Facundo Nahuel Casal](https://github.com/facundocasal)
