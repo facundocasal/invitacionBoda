@@ -41,7 +41,7 @@ El cliente puede ofrecer este servicio para crear y compartir invitaciones web c
 
 ## Personalización
 
-###El cliente puede personalizar las invitaciones fácilmente al modificar:
+### El cliente puede personalizar las invitaciones fácilmente al modificar:
 
 - **Texto e información del evento:** Directamente en el archivo index.html.
 - **Estilos:** Los colores, fuentes y disposición de los elementos pueden ser editados en styles.css.
@@ -50,9 +50,10 @@ El cliente puede ofrecer este servicio para crear y compartir invitaciones web c
 ## Casos de Uso
 
 ### Este proyecto es ideal para cualquier tipo de evento, como:
--**Bodas**
--**Cumpleaños**
--**Conferencias**
--**Reuniones corporativas**
--**Aniversarios**
--**Fiestas temáticas**
+
+- **Bodas**
+- **Cumpleaños**
+- **Conferencias**
+- **Reuniones corporativas**
+- **Aniversarios**
+- **Fiestas temáticas**
